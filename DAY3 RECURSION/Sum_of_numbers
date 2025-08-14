@@ -1,0 +1,6 @@
+def Sum_of_numbers(n):
+  if n==0:
+    return 1
+  return n+Sum_of_numbers(n-1)
+n=5
+print(Sum_of_numbers(n))
