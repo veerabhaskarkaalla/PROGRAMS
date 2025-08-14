@@ -1,0 +1,6 @@
+def Length_of_digits(n):
+  if n<10:
+    return 1
+  return 1+Length_of_digits(n//10)
+n=1234
+print(Length_of_digits(n))
