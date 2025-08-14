@@ -1,0 +1,15 @@
+count = 0
+
+def Tower_of_honoi(n, source, temp, destination):
+    global count
+    if n == 1:
+        count += 1
+        print(f"move disk 1 from {source} to {destination}")
+        return
+    Tower_of_honoi(n-1, source, destination, temp)
+    count += 1
+    print(f"move disk {n} from {source} to {destination}")
+    Tower_of_honoi(n-1, temp, source, destination)
+
+Tower_of_honoi(5, "A", "B", "C")
+print("Total moves:", count)
