@@ -1,0 +1,6 @@
+def n21(num):
+  if num== 0:
+    return
+  print(num)
+  n21(num-1)
+n21(5)
