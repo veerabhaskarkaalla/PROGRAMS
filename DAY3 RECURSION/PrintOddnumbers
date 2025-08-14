@@ -1,0 +1,7 @@
+def Odd(num):
+  if num <=0: 
+    return
+  Odd(num-2)
+  print(num)
+n=10
+Odd(n-1 if n%2==0 else n )
