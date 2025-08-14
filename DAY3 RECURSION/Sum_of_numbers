@@ -1,5 +1,5 @@
 def Sum_of_numbers(n):
-  if n==0:
+  if n==1:
     return 1
   return n+Sum_of_numbers(n-1)
 n=5
