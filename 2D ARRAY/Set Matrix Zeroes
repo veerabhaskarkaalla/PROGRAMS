@@ -1,0 +1,16 @@
+class Solution(object):
+    def setZeroes(self, matrix):
+        m=len(matrix)
+        n=len(matrix[0])
+        r,c=set(),set()
+        for i in range(m):
+            for j in range(n):
+                if matrix[i][j]==0:
+                    r.add(i)
+                    c.add(j)
+        for r1 in r:
+            for i in range(n):
+                matrix[r1][i]=0
+        for c1 in c:
+            for j in range(m):
+                matrix[j][c1]=0
